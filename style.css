@@ -1,0 +1,42 @@
+header {
+    border: 1px solid #000;
+}
+/* util-menu / 상단 */
+.util-menu {
+    border: 1px solid red;
+    padding-top: 10.5px; padding-bottom: 10.5px;
+    padding-left: 94px; padding-right: 94px;
+}
+.util-menu-ul{
+    display: flex;
+    justify-content: end;
+}
+.u-menu-item01 {
+    padding-right: 18px;
+}
+.u-menu-item02, .u-menu-item03, .u-menu-item04, .u-menu-item05, .u-menu-item06 {
+    padding-left: 18px; padding-right: 18px;
+}
+.u-menu-item07 {
+    padding-left: 18px;
+    
+}
+
+/* inner / 하단 */
+.inner {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo {
+    border: 1px solid orange;
+}
+.menu01 {
+    border: 1px solid orange;
+}
+.menu01 > ul {
+    display: flex;
+}
+.btn-open {
+    border: 1px solid orange;
+}
