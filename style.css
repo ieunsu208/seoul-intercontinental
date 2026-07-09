@@ -1,42 +1,95 @@
 header {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    position: absolute;
+    right: 0; left: 0;
 }
 /* util-menu / 상단 */
-.util-menu {
-    border: 1px solid red;
+.t-top-menu {
+    /* border: 1px solid red; */
     padding-top: 10.5px; padding-bottom: 10.5px;
     padding-left: 94px; padding-right: 94px;
 }
-.util-menu-ul{
+.t-top-menu > ul {
     display: flex;
     justify-content: end;
 }
-.u-menu-item01 {
+.tt-menu-item {
+    color: #ccc;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    position: relative;
+}
+.tt-menu-item01::after, .tt-menu-item02::after, .tt-menu-item03::after, .tt-menu-item04::after, .tt-menu-item05::after, .tt-menu-item06::after {
+    content: "";
+    width: 1px; height: 7px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0; top: 5px;
+}
+.tt-menu-item01 {
     padding-right: 18px;
 }
-.u-menu-item02, .u-menu-item03, .u-menu-item04, .u-menu-item05, .u-menu-item06 {
+.tt-menu-item02, .tt-menu-item03, .tt-menu-item04, .tt-menu-item05, .tt-menu-item06 {
     padding-left: 18px; padding-right: 18px;
 }
-.u-menu-item07 {
+.tt-menu-item06 > a {
+    display: flex;
+    gap: 1px;
+}
+.tt-menu-item07 {
     padding-left: 18px;
-    
+}
+.tt-menu-item07 > a {
+    display: flex;
+    gap: 4px;
 }
 
 /* inner / 하단 */
-.inner {
-    border: 1px solid red;
+.t-buttom-menu {
+    /* background-color: rgb(148, 148, 148); */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 94px; padding-right: 94px;
+    padding-top: 13px; padding-bottom: 13px;
 }
-.main-logo {
+/* .main-logo {
     border: 1px solid orange;
+} */
+.main-logo img {
+   width: 136px; 
 }
-.menu01 {
+/* .menu01 {
     border: 1px solid orange;
-}
+} */
 .menu01 > ul {
     display: flex;
 }
+.mn01-item {
+    padding-left: 28px; padding-right: 28px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 17.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.8px; /* 165.517% */
+}
 .btn-open {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    padding-left: 40px;
+}
+
+.key-visual {
+    height: 1200px;
+    /* position: relative; */
+}
+.key-visual img {
+    width: 100%;
+    /* position: absolute;
+    object-fit: cover;
+    top: -150px;
+    z-index: -1; */
 }

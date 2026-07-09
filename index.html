@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서울 파르나스</title>
 
+    <!-- inter 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <!-- css 연결 -->
     <link rel="stylesheet" href="normal.css">
     <link rel="stylesheet" href="style.css">
@@ -12,20 +17,30 @@
 <body>
     <header>
         <!-- util-menu / 상단바의 상단 -->
-        <div class="util-menu">
-            <ul class="util-menu-ul">
-                <li class="u-menu-item u-menu-item01"><a href="#" target="_blank">로그인</a></li>
-                <li class="u-menu-item u-menu-item02"><a href="#" target="_blank">예약 조회</a></li>
-                <li class="u-menu-item u-menu-item03"><a href="#" target="_blank">멤버십</a></li>
-                <li class="u-menu-item u-menu-item04"><a href="#" target="_blank">E-SHOP</a></li>
-                <li class="u-menu-item u-menu-item05"><a href="#" target="_blank">고객센터</a></li>
-                <li class="u-menu-item u-menu-item06"><a href="#" target="_blank">KOR</a></li>
-                <li class="u-menu-item u-menu-item07"><a href="#" target="_blank">IHG.COM</a></li>
+        <div class="t-top-menu">
+            <ul class="tt-menu-ul">
+                <li class="tt-menu-item tt-menu-item01"><a href="#" target="_blank">로그인</a></li>
+                <li class="tt-menu-item tt-menu-item02"><a href="#" target="_blank">예약 조회</a></li>
+                <li class="tt-menu-item tt-menu-item03"><a href="#" target="_blank">멤버십</a></li>
+                <li class="tt-menu-item tt-menu-item04"><a href="#" target="_blank">E-SHOP</a></li>
+                <li class="tt-menu-item tt-menu-item05"><a href="#" target="_blank">고객센터</a></li>
+                <li class="tt-menu-item tt-menu-item06"><a href="#" target="_blank">
+                    KOR
+                    <img src="./image/kor-img.svg" alt="언어 설정">
+                </a></li>
+                <li class="tt-menu-item tt-menu-item07"><a href="#" target="_blank">
+                    IHG.COM
+                    <img src="./image/ihg.com-img.svg" alt="링크 더보기">
+                </a></li>
             </ul>
         </div>
         <!-- inner / 상단바의 하단 -->
-        <div class="inner">
-            <h1 class="main-logo">메인 로고</h1>
+        <div class="t-buttom-menu">
+            <h1 class="main-logo">
+                <a href="#" target="_blank">
+                    <img src="./image/h1.main-logo.svg" alt="메인 로고">
+                </a>
+            </h1>
             <nav class="menu01">
                 <ul class="menu01-ul">
                     <li class="mn01-item mn01-item01"><a href="#" target="_blank">호텔소개</a></li>
@@ -38,8 +53,15 @@
                     <li class="mn01-item mn01-item08"><a href="#" target="_blank">라이프스타일</a></li>
                 </ul>
             </nav>
-            <button class="btn-open">버튼</button>
+            <button class="btn-open">
+                <a href="#" target="_blank"><img src="./image/button.btn-open.svg" alt="메뉴 버튼"></a>
+            </button>
         </div>
     </header>
+    <section class="key-visual">
+        <div class="img-wrap">
+            <img src="./image/key-visual01.png" alt="이미지">
+        </div>
+    </section>
 </body>
 </html>
