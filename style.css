@@ -15,7 +15,7 @@ header {
 }
 .tt-menu-item {
     color: #ccc;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -71,7 +71,7 @@ header {
 .mn01-item {
     padding-left: 28px; padding-right: 28px;
     color: #fff;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     font-size: 17.4px;
     font-style: normal;
     font-weight: 700;
