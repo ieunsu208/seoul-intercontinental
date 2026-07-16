@@ -2,6 +2,11 @@ header {
     /* border: 1px solid #000; */
     position: absolute;
     right: 0; left: 0;
+    background-color: transparent;
+    transition: 0.7s;
+}
+header:hover {
+    background-color: #fff;
 }
 
 /* util-menu / 상단 */
@@ -23,6 +28,9 @@ header {
     line-height: 16.8px;
     position: relative;
 }
+header:hover .tt-menu-item {
+    color: #666;
+}
 .tt-menu-item01::after, .tt-menu-item02::after, .tt-menu-item03::after, .tt-menu-item04::after, .tt-menu-item05::after, .tt-menu-item06::after {
     content: "";
     width: 1px; height: 7px;
@@ -40,12 +48,20 @@ header {
     display: flex;
     gap: 1px;
 }
+header:hover .tt-menu-item06 img {
+    /* 원래 흰색인 이미지를 완전히 검은색/어두운 톤으로 바꾸는 필터 효과 */
+    filter: invert(60%) brightness(100%);
+}
 .tt-menu-item07 {
     padding-left: 18px;
 }
 .tt-menu-item07 > a {
     display: flex;
     gap: 4px;
+}
+header:hover .tt-menu-item07 img {
+    /* 원래 흰색인 이미지를 완전히 검은색/어두운 톤으로 바꾸는 필터 효과 */
+    filter: invert(60%) brightness(100%);
 }
 
 /* inner / 하단 */
@@ -57,16 +73,28 @@ header {
     padding-left: 94px; padding-right: 94px;
     padding-top: 13px; padding-bottom: 13px;
     position: relative;
-
 }
 /* .main-logo {
     border: 1px solid orange;
 } */
 .main-logo img {
-   width: 136px; 
+    width: 136px; 
 }
+.w-main-logo {
+    display: block;
+}
+.b-main-logo {
+    display: none;
+}
+header:hover .w-main-logo {
+    display: none;
+}
+header:hover .b-main-logo {
+    display: block;
+}
+
 .menu01 {
-        transition: 0.6s;
+    transition: 0.6s;
 }
 .menu01 > ul {
     display: flex;
@@ -80,6 +108,43 @@ header {
     font-weight: 700;
     line-height: 28.8px; /* 165.517% */
 }
+header:hover .mn01-item {
+    color: #222;
+}
+.mn01-item > a {
+    transition: 0.5s;
+    position: relative;
+
+}
+.mn01-item:hover > a::before {
+    width: 50%;
+    transition: 0.5s;
+}
+.mn01-item > a::before {
+    content: "";
+    height: 2px; width: 0;
+    bottom: 0; right: 50%; 
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+.mn01-item:hover > a::after {
+    width: 50%;
+    transition: 0.5s;
+}
+.mn01-item > a::after {
+    content: "";
+    height: 2px; width: 0;
+    bottom: 0; left: 50%; 
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.menu01:hover > .menu02 {
+    height: 530px;
+    position: absolute;
+}
 .menu02 {
     height: 0px;
     position: absolute;
@@ -88,12 +153,14 @@ header {
     transition: 0.6s;
     overflow: hidden;
 }
-.menu01:hover > .menu02 {
-    height: 530px;
-}
 .btn-open {
     /* border: 1px solid orange; */
     padding-left: 40px;
+    transition: 0.5s;
+}
+header:hover .btn-open {
+    /* 원래 흰색인 이미지를 완전히 검은색/어두운 톤으로 바꾸는 필터 효과 */
+    filter: invert(100%) brightness(15%);
 }
 
 .key-visual {
@@ -103,4 +170,5 @@ header {
 .key-visual img {
     width: 100%; height: 100vh;
     object-fit: cover;
+    transition: 0.7s;
 }
