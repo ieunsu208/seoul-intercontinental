@@ -74,6 +74,8 @@ header:hover .tt-menu-item07 img {
     padding-top: 13px; padding-bottom: 13px;
     position: relative;
 }
+
+/* /main-logo / 로고 */
 /* .main-logo {
     border: 1px solid orange;
 } */
@@ -93,6 +95,7 @@ header:hover .b-main-logo {
     display: block;
 }
 
+/* menu01 / 상단바 하단 메뉴01 */
 .menu01 {
     transition: 0.6s;
 }
@@ -140,19 +143,37 @@ header:hover .mn01-item {
     position: absolute;
     transition: 0.3s;
 }
-
-.menu01:hover > .menu02 {
-    height: 530px;
+.mn01-i-01 {
     position: absolute;
+    top: 100%; right: 0; left: 50%;
+    background-color: #bababa;
+    height: 430px;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px;
 }
-.menu02 {
-    height: 0px;
+.mn01-i01-sub {
+    border: 1px solid red;
+    transform: translateX(-50%);
+    height: 100%; width: 100%;
+}
+
+/* menu02 / 상단바 하단 2차 메뉴 */
+/* .menu02 {
+    max-width: 1920px;
+    height: 530px;
     position: absolute;
     left: 0; right: 0; top: 100%;
     background-color: #fff;
     transition: 0.6s;
     overflow: hidden;
 }
+.menu01:hover > .menu02 {
+    height: 530px;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px;
+} */
+
+/* btn-open / 상단바 하단 오른쪽 버튼 */
 .btn-open {
     /* border: 1px solid orange; */
     padding-left: 40px;
@@ -163,6 +184,7 @@ header:hover .btn-open {
     filter: invert(100%) brightness(15%);
 }
 
+/* key-visual / 상단 배경 이미지 */
 .key-visual {
     height: 1200px;
     /* position: relative; */
