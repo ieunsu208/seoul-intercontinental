@@ -104,6 +104,8 @@ header:hover .b-main-logo {
 }
 .mn01-item {
     padding-left: 28px; padding-right: 28px;
+}
+.mn01-a {
     color: #fff;
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
@@ -111,22 +113,21 @@ header:hover .b-main-logo {
     font-weight: 700;
     line-height: 28.8px; /* 165.517% */
 }
-header:hover .mn01-item {
+header:hover .mn01-a {
     color: #222;
 }
-.mn01-item > a {
+.mn01-item > .mn01-a {
     transition: 0.5s;
     position: relative;
-
 }
-.mn01-item:hover > a::before {
+.mn01-item:hover > .mn01-a::before {
     width: 50%;
     transition: 0.5s;
 }
-.mn01-item > a::before {
+.mn01-a::before {
     content: "";
     height: 2px; width: 0;
-    bottom: 0; right: 50%; 
+    bottom: 0; right: 50%;
     background-color: #222;
     position: absolute;
     transition: 0.3s;
@@ -135,7 +136,7 @@ header:hover .mn01-item {
     width: 50%;
     transition: 0.5s;
 }
-.mn01-item > a::after {
+.mn01-a::after {
     content: "";
     height: 2px; width: 0;
     bottom: 0; left: 50%; 
@@ -143,19 +144,75 @@ header:hover .mn01-item {
     position: absolute;
     transition: 0.3s;
 }
-.mn01-i-01 {
+.menu02 {
     position: absolute;
     max-width: 1920px;
     top: 100%; right: 0; left: 0;
-    background-color: #bababa;
+    background-color: #e8e8e8;
     height: 430px;
     padding-top: 40px; padding-bottom: 60px; 
-    padding-left: 32px;
+    padding-left: 32px; padding-right: 200px;
 }
-.mn01-i01-sub {
+.mn02-list {
     border: 1px solid red;
     /* transform: translateX(-50%); */
-    height: 100%; width: 100%;
+    height: 100%;
+    padding-left: 300px; padding-right: 300px;
+    display: flex;
+    gap: 32px;
+}
+.mn01-l-box {
+    margin-right: 5px;
+    padding-right: 30px;
+    /* border: 1px solid orange; */
+    border-right: 1px solid #bababa;
+    flex-grow: 1; flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mn02-title {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+}
+.mn02-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mn02-item > a {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(var(--ck-font-size-base) * 7.5 / 13);
+    letter-spacing: calc(var(--ck-font-size-base) * -0.2 / 13);
+}
+.mn02-title > a::before {
+    content: "";
+    height: 2px; width: 0;
+    bottom: 0; top: calc(100% + 2px); right: 50%;
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+.mn02-title:hover > a::before {
+    width: 50%;
+    transition: 0.5s;
+}
+.mn02-title > a::after {
+    content: "";
+    height: 2px; width: 0;
+    bottom: 0; top: calc(100% + 2px); left: 50%; 
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+.mn02-title:hover > a::after {
+    width: 50%;
+    transition: 0.5s;
 }
 
 /* menu02 / 상단바 하단 2차 메뉴 */
