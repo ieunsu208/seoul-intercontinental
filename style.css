@@ -177,6 +177,10 @@ header:hover .mn01-a {
     font-weight: 600;
     position: relative;
     display: flex;
+    background-color: orange;
+}
+.mn02-title > a {
+    background-color: skyblue;
 }
 .mn02-ul {
     display: flex;
