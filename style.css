@@ -147,17 +147,19 @@ header:hover .mn01-a {
 .menu02 {
     position: absolute;
     max-width: 1920px;
-    top: 0; right: 0; left: 0;
+    top: 100%; right: 0; left: 0;
     height: 0px;
-    padding-top: 40px; padding-bottom: 60px; 
-    padding-left: 32px; padding-right: 200px;
     transition: 0.5s;
+    opacity: 0;
+    background-color: #fff;
 }
 .mn01-item01:hover .menu02 {
     background-color: #fff;
     height: 430px;
-    top: 100%;
     overflow: hidden;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+    opacity: 1;
 }
 .mn02-list {
     /* border: 1px solid red; */
