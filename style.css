@@ -147,19 +147,29 @@ header:hover .mn01-a {
 .menu02 {
     position: absolute;
     max-width: 1920px;
-    top: 100%; right: 0; left: 0;
-    background-color: #e8e8e8;
-    height: 430px;
+    top: 0; right: 0; left: 0;
+    height: 0px;
     padding-top: 40px; padding-bottom: 60px; 
     padding-left: 32px; padding-right: 200px;
+    transition: 0.5s;
+}
+.mn01-item01:hover .menu02 {
+    background-color: #fff;
+    height: 430px;
+    top: 100%;
+    overflow: hidden;
 }
 .mn02-list {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* transform: translateX(-50%); */
     height: 100%;
     padding-left: 300px; padding-right: 300px;
-    display: flex;
+    display: none;
     gap: 32px;
+}
+.mn01-item01:hover .mn02-list {
+    display: flex;
+    overflow: hidden;
 }
 .mn01-l-box {
     margin-right: 5px;
@@ -177,23 +187,11 @@ header:hover .mn01-a {
     font-weight: 600;
     position: relative;
     display: flex;
-    background-color: orange;
+    /* background-color: orange; */
 }
-.mn02-title > a {
+/* .mn02-title > a {
     background-color: skyblue;
-}
-.mn02-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.mn02-item > a {
-    font-family: 'Pretendard', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(var(--ck-font-size-base) * 7.5 / 13);
-    letter-spacing: calc(var(--ck-font-size-base) * -0.2 / 13);
-}
+} */
 .mn02-title > a::before {
     content: "";
     height: 2px; width: 0;
@@ -215,6 +213,44 @@ header:hover .mn01-a {
     transition: 0.3s;
 }
 .mn02-title:hover > a::after {
+    width: 50%;
+    transition: 0.5s;
+}
+.mn02-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mn02-item > a {
+    position: relative;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(var(--ck-font-size-base) * 7.5 / 13);
+    letter-spacing: calc(var(--ck-font-size-base) * -0.2 / 13);
+    /* border-bottom: 1px solid #000; */
+}
+.mn02-item > a::before {
+    content: "";
+    height: 0.5px; width: 0;
+    bottom: 0; top: calc(100% + 1px); right: 50%;
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+.mn02-item:hover > a::before {
+    width: 50%;
+    transition: 0.5s;
+}
+.mn02-item > a::after {
+    content: "";
+    height: 0.5px; width: 0;
+    bottom: 0; top: calc(100% + 1px); left: 50%; 
+    background-color: #222;
+    position: absolute;
+    transition: 0.3s;
+}
+.mn02-item:hover > a::after {
     width: 50%;
     transition: 0.5s;
 }
