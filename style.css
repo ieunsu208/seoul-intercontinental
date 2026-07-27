@@ -144,6 +144,8 @@ header:hover .mn01-a {
     position: absolute;
     transition: 0.3s;
 }
+
+/* menu02 / 상단바 하단 2차 메뉴 */
 .menu02 {
     position: absolute;
     max-width: 1920px;
@@ -252,22 +254,6 @@ header:hover .mn01-a {
     transition: 0.5s;
 }
 
-/* menu02 / 상단바 하단 2차 메뉴 */
-/* .menu02 {
-    max-width: 1920px;
-    height: 530px;
-    position: absolute;
-    left: 0; right: 0; top: 100%;
-    background-color: #fff;
-    transition: 0.6s;
-    overflow: hidden;
-}
-.menu01:hover > .menu02 {
-    height: 530px;
-    padding-top: 40px; padding-bottom: 60px; 
-    padding-left: 32px;
-} */
-
 /* btn-open / 상단바 하단 오른쪽 버튼 */
 .btn-open {
     /* border: 1px solid orange; */
@@ -281,7 +267,7 @@ header:hover .btn-open {
 
 /* key-visual / 상단 배경 이미지 */
 .key-visual {
-    height: 1200px;
+    /* height: 1200px; */
     position: absolute;
     z-index: -1;
     top: 0;
@@ -290,5 +276,5 @@ header:hover .btn-open {
 .key-visual img {
     width: 100%; height: 100vh;
     object-fit: cover;
-    transition: 0.7s;
+    overflow: hidden;
 }
