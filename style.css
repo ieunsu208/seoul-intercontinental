@@ -356,9 +356,26 @@ header:hover .btn-open {
     padding-top: 8px;
     
 }
+.pr-item {
+    border: 1px solid red;
+}
+.pr-item > a {
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .pr-img-box {
     background-color: #c2c2c2;
     height: 260px;
+}
+
+/* pr-text-box / 섹션01 리스트 텍스트 */
+.pr-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .pr-cap {
     font-family: 'Pretendard', sans-serif;
@@ -376,5 +393,8 @@ header:hover .btn-open {
 .pr-date {
     font-family: 'Pretendard', sans-serif;
     color: #222;
-
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 8px;
 }
