@@ -282,7 +282,10 @@ header:hover .btn-open {
 /* section01 / 섹션01 */
 .section01 {
     padding-left: 64px; padding-right: 64px;
-    padding-bottom: 200px;
+    padding-bottom: 200px; padding-top: 79px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 /* sec01-main-title / 메인 타이틀 */
@@ -346,4 +349,32 @@ header:hover .btn-open {
     color: #fff;
     background-color: #7C4D56;
     border: 1px solid #7C4D56;
+}
+
+/* sec01-lsit-box / 리스트 박스 */
+.sec01-lsit-box {
+    padding-top: 8px;
+    
+}
+.pr-img-box {
+    background-color: #c2c2c2;
+    height: 260px;
+}
+.pr-cap {
+    font-family: 'Pretendard', sans-serif;
+    color: #7C4D56;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.pr-name {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 22.3px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.pr-date {
+    font-family: 'Pretendard', sans-serif;
+    color: #222;
+
 }
