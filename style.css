@@ -370,6 +370,13 @@ header:hover .btn-open {
     background-color: #c2c2c2;
     height: 260px;
 }
+.pr-img-box > a {
+    border: 1px solid blue;
+    height: 100%;
+}
+.pr-img-box img {
+}
+
 
 /* pr-text-box / 섹션01 리스트 텍스트 */
 .pr-text-box {
