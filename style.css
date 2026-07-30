@@ -352,9 +352,12 @@ header:hover .btn-open {
 }
 
 /* sec01-lsit-box / 리스트 박스 */
-.sec01-lsit-box {
+.sec01-list-box {
     padding-top: 8px;
     
+}
+.product-ul {
+    display: flex;
 }
 .pr-item {
     border: 1px solid red;
@@ -370,11 +373,9 @@ header:hover .btn-open {
     background-color: #c2c2c2;
     height: 260px;
 }
-.pr-img-box > a {
-    border: 1px solid blue;
-    height: 100%;
-}
 .pr-img-box img {
+    object-fit: cover;
+    height: 100%;
 }
 
 
