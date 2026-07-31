@@ -332,6 +332,7 @@ header:hover .btn-open {
 .chip-ul {
     display: flex;
     gap: 8px;
+    flex-shrink: 1;
 }
 .chip-item {
     border: 1px solid #ddd;
@@ -358,9 +359,14 @@ header:hover .btn-open {
 }
 .product-ul {
     display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 .pr-item {
     border: 1px solid red;
+    /* width: 100%; */
+    box-sizing: border-box;
+    /* flex-grow: 1; flex-basis: 0; */
 }
 .pr-item > a {
     border: 1px solid orange;
@@ -406,3 +412,5 @@ header:hover .btn-open {
     line-height: 24px;
     padding-top: 8px;
 }
+
+.sct01-right-box
