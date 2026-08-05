@@ -1,3 +1,6 @@
+body {
+    left: 0; right: 0;
+}
 header {
     /* border: 1px solid #000; */
     position: absolute;
@@ -283,9 +286,13 @@ header:hover .btn-open {
 .section01 {
     padding-left: 64px; padding-right: 64px;
     padding-bottom: 200px; padding-top: 79px;
+    max-width: 1920px;
+    margin-top: 0; margin-bottom: 0;
+    margin-left: auto; margin-right: auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    box-sizing: border-box;
 }
 
 /* sec01-main-title / 메인 타이틀 */
@@ -300,10 +307,10 @@ header:hover .btn-open {
 .menu-box {
     /* border: 1px solid red; */
     display: flex;
-    padding-top: 48px; padding-right: 30px;
-    /* justify-content: space-between; */
+    margin-top: 48px;
     align-items: center;
     gap: 40px;
+    width: 100%;
 }
 .col {
     display: flex;
@@ -343,7 +350,7 @@ header:hover .btn-open {
     cursor: pointer;
     font-family: 'Pretendard', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
 }
 .active {
@@ -355,21 +362,26 @@ header:hover .btn-open {
 /* sec01-lsit-box / 리스트 박스 */
 .sec01-list-box {
     padding-top: 8px;
-    
+    display: flex;
+    gap: 32px;
+    height: 800px;
 }
 .product-ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    width: 100%;
 }
 .pr-item {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 100%; */
     box-sizing: border-box;
     /* flex-grow: 1; flex-basis: 0; */
+    flex-grow: 1; flex-basis: 0;
+    /* height: 0; */
 }
 .pr-item > a {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -381,7 +393,7 @@ header:hover .btn-open {
 }
 .pr-img-box img {
     object-fit: cover;
-    height: 100%;
+    height: 100%; width: 100%;
 }
 
 
@@ -408,9 +420,19 @@ header:hover .btn-open {
     font-family: 'Pretendard', sans-serif;
     color: #222;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
     padding-top: 8px;
 }
 
-.sct01-right-box
+.sct01-right-box {
+    /* border: 1xp solid blue; */
+    height: 100%; width: 31%;
+}
+.sct01-right-box > a {
+    height: 100%;
+}
+.sct01-right-box img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+}
