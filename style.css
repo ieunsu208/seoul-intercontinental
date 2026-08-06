@@ -156,7 +156,7 @@ header:hover .mn01-a {
     height: 40px;
     top: -40px;
     left: 0; right: 0;
-    background-color: red;
+    background-color: transparent;
 }
 .menu02 {
     position: absolute;
@@ -168,7 +168,56 @@ header:hover .mn01-a {
     overflow: hidden;
     background-color: #fff;
 }
-.mn01-item01:hover .menu02 {
+.mn01-item01:hover .menu02-01 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item02:hover .menu02-02 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item03:hover .menu02-03 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item04:hover .menu02-04 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item05:hover .menu02-05 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item06:hover .menu02-06 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item07:hover .menu02-07 {
+    background-color: #fff;
+    height: 430px;
+    opacity: 1;
+    padding-top: 40px; padding-bottom: 60px; 
+    padding-left: 32px; padding-right: 200px;
+}
+.mn01-item08:hover .menu02-08 {
     background-color: #fff;
     height: 430px;
     opacity: 1;
@@ -183,7 +232,7 @@ header:hover .mn01-a {
     gap: 32px;
     overflow: hidden;
 }
-.mn01-item01:hover .mn02-list {
+.mn01-item:hover .mn02-list {
     display: flex;
 }
 .mn01-l-box {
@@ -195,6 +244,9 @@ header:hover .mn01-a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.none {
+    border-right: transparent;
 }
 .mn02-title {
     font-family: 'Pretendard', sans-serif;
@@ -279,16 +331,35 @@ header:hover .btn-open {
 
 /* key-visual / 상단 배경 이미지 */
 .key-visual {
-    /* height: 1200px; */
-    /* position: absolute; */
-    /* z-index: -1; */
     top: 0;
     left: 0; right: 0;
+    position: relative;
+    z-index: -1;
 }
 .key-visual img {
     width: 100%; height: 100vh;
     object-fit: cover;
     overflow: hidden;
+}
+.kv-text-box {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 38%; left: 50%; right: 50%;
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+}
+.kv-main-title {
+    color: #fff;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 96px;
+}
+.kv-description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 38px;
 }
 
 /* section01 / 섹션01 */
