@@ -84,6 +84,6 @@ button {
     border: none; outline: none;
 }
 img {
-    /* background-color: red; */
+    background-color: red;
     display: block;
 }
