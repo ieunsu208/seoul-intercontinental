@@ -160,7 +160,9 @@ header:hover .mn01-a {
 }
 .menu02 {
     position: absolute;
-    max-width: 1920px;
+    max-width: 100vw;
+    /* margin: 0 auto; */
+    /* width: 100%; */
     top: 100%; right: 0; left: 0;
     height: 0;
     transition: 0.5s;
@@ -521,8 +523,8 @@ header:hover .btn-open {
 .section02 {
     background-color: #F4EEEA;
     padding-top: 201px;
-    /* padding-bottom: 160px; */
-    padding-bottom: 500px;
+    padding-bottom: 160px;
+    /* padding-bottom: 500px; */
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -563,7 +565,7 @@ header:hover .btn-open {
 }
 .sct-w-img-box {
     width: 100%;
-    max-width: 944px;
+    max-width: 100vh;
     height: 100%;
 }
 .sct-w-img-box > img {
@@ -600,7 +602,7 @@ header:hover .btn-open {
 }
 .w-text-right > p {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 25px;
 }
 .text-r-btn {
@@ -620,9 +622,67 @@ header:hover .btn-open {
     content: "";
     position: absolute;
     top: 100%; left: 0;
-    width: 100%; height: 3px;
+    width: 100%;
+    height: 2px;
     background-color: #222;
+    transition: 0.3s;
 }
-.text-r-btn:hover .text-r-btn::before {
+.text-r-btn:hover::before {
     width: 0;
+}
+
+/* 광고 / banner */
+.banner {
+    padding-top: 79px; padding-bottom: 79px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+} 
+.banner-con {
+    /* border: 1px solid red; */
+    position: relative;
+    width: auto;
+    width: 1792px;
+}
+.banner-img-box {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 100%;
+}
+.banner-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ba-text-con {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 18%; left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.banner-title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 55px;
+    color: #fff;
+}
+.banner-dis {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #fff;
+}
+.banner-btn {
+    width: fit-content;
+    display: flex;
+    padding-bottom: 8px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
