@@ -369,7 +369,6 @@ header:hover .btn-open {
     padding-left: 64px; padding-right: 64px;
     padding-bottom: 200px; padding-top: 79px;
     max-width: 1920px;
-    margin-top: 0; margin-bottom: 0;
     margin-left: auto; margin-right: auto;
     display: flex;
     flex-direction: column;
@@ -634,7 +633,7 @@ header:hover .btn-open {
 /* 광고 / banner */
 .banner {
     padding-top: 79px; padding-bottom: 79px;
-    margin-top: 50px;
+    margin-top: 50px; margin-bottom: 50px;
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
@@ -685,4 +684,138 @@ header:hover .btn-open {
     line-height: 30px;
     color: #fff;
     border-bottom: 2px solid #fff;
+}
+
+/* section03 / 섹션03 */
+.section03 {
+    background-color: #FBF9F6;
+}
+.sct-con {
+    padding-left: 64px; padding-right: 64px;
+    margin-left: auto; margin-right: auto;
+    max-width: 1792px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* sct03-top-text-box / 상단 텍스트 박스 */
+.sct03-top-text-box {
+    padding-bottom: 60px;
+}
+.sct03-t-title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 67px;
+}
+.sct03-t-desc {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.sct03-t-text {
+    font-size: 17px;
+    line-height: 18px;
+    align-self: center;
+}
+.sct03-t-list {
+    display: flex;
+    gap: 16px;
+    padding-right: 64px;
+}
+.sct03-l-item > button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-top: 10px; padding-bottom: 10px;
+    padding-left: 22px; padding-right: 22px;
+    position: relative;
+}
+.sct03-line {
+    color: #7C4D56;
+}
+.sct03-line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0; left: 0;
+    background-color: #7C4D56;
+}
+
+/* sct03-list / 섹션03 리스트 */
+.sct03-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* sct03-list / 섹션03 상단 리스트 */
+.sct03-main-item > a {
+    display: flex;
+    gap: 32px;
+}
+.sct-m-img-box > img {
+    height: 580px; width: 100%;
+    object-fit: cover;
+}
+.sct03-m-info {
+    /* border: 1px solid red; */
+    padding-top: 147px; padding-bottom: 147px;
+    padding-right: 80px;
+}
+.m-cap {
+    color: #7C4D56 ;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.m-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 24px;
+}
+.m-desc {
+    color: #6A6A6A;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    padding-bottom: 28px;
+    margin-bottom: 24px;
+}
+.m-date {
+    color: #999;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* sct03-product-list / 섹션03 하단 리스트 */
+.sct03-pr-ul {
+    display: flex;
+    gap: 32px;
+}
+.sct03-pr-item > a {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.pr-l-img-box img {
+    height: 280px;width: 100%;
+    object-fit: cover;
+}
+.pr-l-ex {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #7C4D56;
+}
+.pr-l-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    padding-bottom: 12px;
+}
+.pr-l-date {
+    color: #999;
+    font-size: 16px;
+    line-height: 16px;
 }
